@@ -11,16 +11,16 @@ When faced with a large amount of unstructured text data, named entity recogniti
 * We find and classify relevant information such as the companies the applicant worked at, skills, type of degree, etc. 
 
 ## Dataset
-Our dataset consists of resume text in JSON format. 
+Our dataset consists of a set of resumes represented in JSON format. 
 ```
-	content	                                           annotation
+	content	                                                annotation
 0	Abhishek Jha Application Development Associate...	[{'label': ['Skills'], 'points': [{'start': 12...
 1	Afreen Jamadar Active member of IIIT Committee...	[{'label': ['Email Address'], 'points': [{'sta...
 2	Akhil Yadav Polemaina Hyderabad, Telangana - E...	[{'label': ['Skills'], 'points': [{'start': 37...
 3	Alok Khandai Operational Analyst (SQL DBA) Eng...	[{'label': ['Skills'], 'points': [{'start': 80...
 4	Ananya Chavan lecturer - oracle tutorials Mum...	[{'label': ['Degree'], 'points': [{'start': 20...
 ```
-An annotation column is essentially a list of pairs of key and value representing the resume content
+An annotation column is essentially a list of pairs of key and value representing the resume content, which may look like:
 ```
 [{'label': ['Skills'],
   'points': [{'start': 1295,
@@ -65,3 +65,6 @@ An annotation column is essentially a list of pairs of key and value representin
  {'label': ['Name'],
   'points': [{'start': 0, 'end': 11, 'text': 'Abhishek Jha'}]}]
   ```
+  
+## Transformer model
+We tokenize the input using the [🤗 DistilBERT fast tokenizer](https://huggingface.co/transformers/model_doc/distilbert.html) to match the DistilBERT transformer model we are using.
