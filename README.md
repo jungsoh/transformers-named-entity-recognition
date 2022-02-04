@@ -67,4 +67,4 @@ An annotation column is essentially a list of pairs of key and value representin
   ```
   
 ## Transformer model
-We tokenize the input using the [🤗 DistilBERT fast tokenizer](https://huggingface.co/transformers/model_doc/distilbert.html) to match the DistilBERT transformer model we are using.
+We tokenize the input using the [🤗 DistilBERT fast tokenizer](https://huggingface.co/transformers/model_doc/distilbert.html) to match the pre-trained DistilBERT transformer model we are using.
