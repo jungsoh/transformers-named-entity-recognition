@@ -10,6 +10,8 @@ When faced with a large amount of unstructured text data, named entity recogniti
 * We use the transformer model to process a large dataset of resumes.
 * We find and classify relevant information such as the companies the applicant worked at, skills, type of degree, etc. 
 
+I did this project in the [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models) course as part of the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning).
+
 ## Dataset
 Our dataset consists of a set of resumes represented in JSON format. 
 ```
